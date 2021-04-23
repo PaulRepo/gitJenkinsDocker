@@ -1,2 +1,0 @@
-FROM vimal13/apache-webserver-php AS builder
-ENV PS_MODULE=m4
