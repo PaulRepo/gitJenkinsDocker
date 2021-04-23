@@ -1,0 +1,16 @@
+pipeline {
+	agent {
+		dockerfile {
+			dir 'gitJenkinsDocker'
+			filename 'Dockerfile.sdk'
+		}
+	}
+	stages {
+		stage('Verify') {
+			steps {
+				sh 'printenv'
+				echo 'pwd: pwd'
+			}
+		}
+	}
+}
